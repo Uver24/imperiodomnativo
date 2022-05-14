@@ -1,0 +1,48 @@
+.inicio{
+    background-image: url(/img/Hot\ dog\ banner.jpg);
+}
+
+.header {
+    padding: 1rem 0rem 1rem 0rem;
+    &.inicio{
+        background-position: center center ;
+        background-size: cover; /*Toma todo el tamaño disponible*/
+        
+        @include tablet{
+            min-width: 30rem;
+        }
+        .contenedor-header{
+            @include tablet{
+                min-height: 30rem;
+            }
+        }
+    }
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h1{
+        text-align: center;
+    }
+}
+
+.barra {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-between;
+    @include tablet {
+        flex-direction: row;
+        display: flex;
+    }
+    img {
+        width: 230px;
+        height: 200px;
+        margin: auto;
+    }
+}  
+
