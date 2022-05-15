@@ -16,7 +16,17 @@
         @content;
     }
 }
-
+@mixin boton($bgcolor, $color, $display){
+    background-color: $bgcolor;
+    text-shadow: 0 1px $negro;
+    color: $color;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: $separacion/2;
+    display: $display;
+}
 @mixin grid($columnas, $espaciado) {
     display: grid;
     gap:$espaciado;

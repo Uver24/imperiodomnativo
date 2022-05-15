@@ -1,0 +1,34 @@
+@include tablet{
+    .contenedor-anuncio{
+        @include grid(3, 2rem);
+     
+    }
+}
+.contenedor-anuncio{
+    padding: 0 2rem 2rem 2rem;
+}
+.anuncio{
+    background-color: lighten($color: #bebdba, $amount: 5);
+    border: 10px solid darken($color: #000000, $amount: 10);
+    border-radius: .20rem;
+    .contenido-anuncio{
+        padding: 1rem;
+    }
+    img{
+        width: 100%
+    }
+    h3, p{
+        text-align: center;
+        margin: 0%;
+    }
+    h3{
+        text-shadow: 0 2px rgb(240, 112, 6);
+        text-decoration: underline;
+        font-weight: $bold;
+    }
+    .precio{
+        color: rgb(240, 112, 6);
+        font-weight: bold;
+        font-size: 2,4rem;
+    }
+}

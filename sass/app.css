@@ -400,9 +400,21 @@ template {
   max-width: 800px;
 }
 
+.boton-amarillo {
+  background-color: green;
+  text-shadow: 0 1px black;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+}
+
 /* Importacion de la User Interface UI*/
 .footer {
-  background-color: #fd4400;
+  background-color: black;
   padding: 2.5rem 0;
 }
 .footer .contenedor-footer {
@@ -417,7 +429,7 @@ template {
 }
 
 .inicio {
-  background-image: url(/img/Hot\ dog\ banner.jpg);
+  background-image: url("/img/fondo.jpg");
 }
 
 .header {
@@ -445,6 +457,7 @@ template {
   justify-content: space-between;
 }
 .contenido-header h1 {
+  font-size: 50px;
   text-align: center;
 }
 
@@ -461,8 +474,8 @@ template {
   }
 }
 .barra img {
-  width: 230px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   margin: auto;
 }
 
@@ -486,13 +499,80 @@ template {
 }
 
 .navegacion a:hover {
-  background-color: #ffae00;
+  background-color: rgb(240, 112, 6);
   border-radius: 0rem 8rem 0rem 8rem;
 }
 
 .header h1 {
   color: white;
   text-shadow: 0px 2px #9e927d;
+}
+
+@media (min-width: 768px) {
+  .contenedor-anuncio {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contenedor-anuncio {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.anuncio {
+  background-color: #cacac7;
+  border: 10px solid black;
+  border-radius: 0.2rem;
+}
+.anuncio .contenido-anuncio {
+  padding: 1rem;
+}
+.anuncio img {
+  width: 100%;
+}
+.anuncio h3, .anuncio p {
+  text-align: center;
+  margin: 0%;
+}
+.anuncio h3 {
+  text-shadow: 0 2px rgb(240, 112, 6);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.anuncio .precio {
+  color: rgb(240, 112, 6);
+  font-weight: bold;
+  font-size: 2, 4rem;
+}
+
+.icono {
+  text-align: justify;
+}
+.icono img {
+  height: 50rem;
+  width: 50rem;
+  margin: auto;
+}
+.icono h3 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .iconos-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.icono:hover {
+  background-color: rgb(240, 112, 6);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8rem 8rem 8rem 8rem;
+}
+
+body {
+  background-color: rgb(147, 136, 136);
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,5 +1,5 @@
 .inicio{
-    background-image: url(/img/Hot\ dog\ banner.jpg);
+    background-image: url('/img/fondo.jpg');
 }
 
 .header {
@@ -25,6 +25,7 @@
     justify-content: space-between;
     
     h1{
+        font-size:50px;
         text-align: center;
     }
 }
@@ -40,8 +41,8 @@
         display: flex;
     }
     img {
-        width: 230px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
         margin: auto;
     }
 }  
