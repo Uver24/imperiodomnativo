@@ -429,14 +429,14 @@ template {
 }
 
 .inicio {
-  background-image: url("/img/fondo.jpg");
+  background-image: url("/img/farid.jpg");
 }
 
 .header {
   padding: 1rem 0rem 1rem 0rem;
 }
 .header.inicio {
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   /*Toma todo el tamaño disponible*/
 }
@@ -462,6 +462,7 @@ template {
 }
 
 .barra {
+  color: black;
   display: flex;
   flex-direction: column;
   padding: 3rem;
