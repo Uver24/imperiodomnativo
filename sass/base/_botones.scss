@@ -1,3 +1,10 @@
 .boton-amarillo {
-    @include boton(green, $blanco, block);
+    @include boton(rgb(240, 112, 6), $blanco, block);
+}
+.naranja{
+    @include boton (rgb(240, 112, 6),$blanco,inline-block)
+}
+
+.boton-verde{
+    @include boton (green,$verde,inline-block)
 }
