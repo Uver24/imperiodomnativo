@@ -5,14 +5,17 @@
     color:$blanco;
     blockquote{
         padding-left: 5rem;
+        position: relative;
 
         &::before{
             content: '';
-            background-image: url('/img/blog/consumo.jpg');
+            background-image: url('/img/productos/fondo-slide3.jpeg');
             background-repeat: no-repeat;
             width: 20rem;
             height: 24rem;
             display: block;
+            left: -13rem;
+            top: -8rem;
         
         }
     }
