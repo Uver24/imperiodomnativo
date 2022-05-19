@@ -703,9 +703,30 @@ p {
   width: 20rem;
   height: 24rem;
   display: block;
-  position: absolute;
-  left: -13rem;
-  top: -8rem;
+}
+
+/* Paginas internas*/
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.texto-nosotros blockquote {
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 1rem 0 3rem 0;
+}
+.texto-nosotros blockquote::after {
+  content: "";
+  display: block;
+  width: 25rem;
+  height: 0.5rem;
+  background-color: #f07006;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
