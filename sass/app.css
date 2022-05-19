@@ -633,4 +633,51 @@ p {
   border-style: double;
 }
 
+@media (min-width: 768px) {
+  .inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+  }
+}
+.entrada-blog {
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .entrada-blog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column: gap 2rem;
+  }
+}
+.entrada-blog::last-of-type {
+  margin-bottom: 0;
+}
+
+.texto-entrada a {
+  color: black;
+  margin-top: 2rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .texto-entrada a {
+    margin-top: 0;
+  }
+}
+.texto-entrada a h4 {
+  margin: 0;
+  line-height: 1.4;
+}
+.texto-entrada a h4::after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  background-color: green;
+  margin-top: 1rem;
+}
+.texto-entrada a span {
+  color: rgb(240, 112, 6);
+}
+
 /*# sourceMappingURL=app.css.map */
