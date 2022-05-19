@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  font-family: "Alegreya", serif;
+  font-family: "Alegreya", sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: rgb(147, 136, 136);
+  background-color: #456F6F;
 }
 
 p {
@@ -37,7 +37,7 @@ img, picture {
 }
 
 h1, h2, h3 {
-  font-family: "Alegreya", serif;
+  font-family: "Alegreya", sans-serif;
   margin: 2.5rem 0;
   font-weight: 300;
   text-align: center;
@@ -431,7 +431,7 @@ template {
 
 .boton-verde {
   background-color: green;
-  color: white;
+  color: #456F6F;
   font-weight: 700;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -444,8 +444,10 @@ template {
 .footer {
   background-color: black;
   padding: 2.5rem 0;
+  margin-bottom: 0;
+  margin-top: 3rem;
 }
-.footer .contenedor-footer {
+.footer .contenerdor-footer {
   padding-top: 2.5rem;
 }
 .footer .copyright {
@@ -453,15 +455,15 @@ template {
   font-size: 2.5rem;
   text-align: center;
   margin: 2.5rem 0 0 0;
-  font-family: "Dancing Script", cursive;
 }
 
 .inicio {
-  background-image: url("/img/fondo-index.jpg");
+  background-image: url("/img/banner.jpg");
 }
 
 .header {
   padding: 1rem 0rem 1rem 0rem;
+  background-color: #3c3c3c;
 }
 .header.inicio {
   background-position: center;
@@ -486,6 +488,7 @@ template {
 }
 .contenido-header h1 {
   font-size: 50px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -501,6 +504,11 @@ template {
     flex-direction: row;
     display: flex;
   }
+  .barra img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
 }
 .barra img {
   width: 280px;
@@ -514,27 +522,26 @@ template {
 @media (min-width: 768px) {
   .navegacion {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 }
-
 .navegacion a {
   color: white;
-  text-shadow: 0px 2px #9e927d;
+  background-color: rgba(0, 0, 0, 0.1803921569);
+  border-radius: 2rem;
   padding: 20px;
   display: block;
   font-size: 2.2rem;
   text-align: center;
 }
-
 .navegacion a:hover {
-  background-color: rgb(240, 112, 6);
-  border-radius: 0rem 8rem 0rem 8rem;
+  background-color: #f07006;
+  border-radius: 2rem 5rem 2rem 5rem;
 }
 
 .header h1 {
   color: white;
-  text-shadow: 0px 2px #9e927d;
+  text-shadow: 0px 2px #1B1A17;
 }
 
 @media (min-width: 768px) {
@@ -575,11 +582,11 @@ template {
 }
 
 .icono {
-  text-align: justify;
+  text-align: center;
 }
 .icono img {
-  height: 50rem;
-  width: 50rem;
+  height: 25rem;
+  width: 25rem;
   margin: auto;
 }
 .icono h3 {
@@ -594,14 +601,14 @@ template {
   }
 }
 .icono:hover {
-  background-color: rgb(240, 112, 6);
+  background-color: #f07006;
   padding: 1rem;
-  margin-bottom: 2rem;
-  border-radius: 8rem 8rem 8rem 8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4rem;
 }
 
 .contacto {
-  background-image: url("/ico/contacto.jpg");
+  background-image: url("/icon/contacto.jpg");
   background-position: center center;
   background-size: cover;
   padding: 15rem 0;
@@ -627,10 +634,99 @@ p {
 }
 
 .naranja:hover {
-  color: rgb(240, 112, 6);
-  background-color: green;
+  color: #f07006;
+  background-color: #456F6F;
   border: 5px solid #232323;
   border-style: double;
+}
+
+@media (min-width: 768px) {
+  .seccion-inferior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.entrada-blog {
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .entrada-blog {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column: gap 2rem;
+  }
+}
+.entrada-blog::last-of-type {
+  margin-bottom: 0;
+}
+
+.texto-entrada a {
+  color: black;
+  margin-top: 2rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .texto-entrada a {
+    margin-top: 0;
+  }
+}
+.texto-entrada a h4 {
+  margin: 0;
+  line-height: 1.4;
+}
+.texto-entrada a h4::after {
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #f07006;
+  margin-top: 1rem;
+}
+.texto-entrada a span {
+  color: #f07006;
+}
+
+.testimonial {
+  background-color: #f07006;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: white;
+}
+.testimonial blockquote {
+  padding-left: 5rem;
+}
+.testimonial blockquote::before {
+  content: "";
+  background-image: url("/img/blog/consumo.jpg");
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 24rem;
+  display: block;
+}
+
+/* Paginas internas*/
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.texto-nosotros blockquote {
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 1rem 0 3rem 0;
+}
+.texto-nosotros blockquote::after {
+  content: "";
+  display: block;
+  width: 25rem;
+  height: 0.5rem;
+  background-color: #f07006;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
