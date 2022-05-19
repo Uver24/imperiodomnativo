@@ -11,7 +11,7 @@ body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
-    background-color:$verde;
+    background-color:$azul;
 }
 
 p {
@@ -23,6 +23,9 @@ p {
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
+    h2 {
+        color: $negro;
+    }
 }
 
 a {

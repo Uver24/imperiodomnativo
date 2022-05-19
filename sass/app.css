@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -10,10 +11,10 @@ html {
 }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: #456F6F;
+  background-color: #3898A8;
 }
 
 p {
@@ -26,6 +27,9 @@ p {
   max-width: 120rem;
   margin: 0 auto;
 }
+.contenedor h2 {
+  color: black;
+}
 
 a {
   text-decoration: none;
@@ -37,7 +41,7 @@ img, picture {
 }
 
 h1, h2, h3 {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
   margin: 2.5rem 0;
   font-weight: 300;
   text-align: center;
@@ -457,7 +461,8 @@ template {
 }
 
 .header {
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 0.2rem 0rem;
+  height: auto;
   background-color: #3c3c3c;
 }
 .header.inicio {
@@ -482,16 +487,17 @@ template {
   justify-content: space-between;
 }
 .contenido-header h1 {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
+  align-self: flex-end;
 }
 
 .barra {
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
@@ -500,14 +506,14 @@ template {
     display: flex;
   }
   .barra img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: auto;
   }
 }
 .barra img {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   margin: auto;
 }
 
@@ -522,21 +528,34 @@ template {
 }
 .navegacion a {
   color: white;
-  background-color: rgba(0, 0, 0, 0.1803921569);
-  border-radius: 2rem;
-  padding: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  border-radius: 1.2rem;
+  padding: 15px;
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 .navegacion a:hover {
-  background-color: #f07006;
-  border-radius: 2rem 5rem 2rem 5rem;
+  background-color: #ffae00;
+  font-weight: 900;
+  color: #1B1A17;
+  text-shadow: 0 0.1rem white;
+  border-radius: 1.8rem 2rem 1.8rem 2rem;
 }
 
 .header h1 {
   color: white;
-  text-shadow: 0px 2px #1B1A17;
+  text-shadow: 0 0.1rem #f07006;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+.header h1:hover {
+  background-color: #ffae00;
+  color: #1B1A17;
+  text-shadow: 0 0.2rem white;
 }
 
 @media (min-width: 768px) {
@@ -546,20 +565,18 @@ template {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.contenedor-anuncio {
-  padding: 0 2rem 2rem 2rem;
-}
-
 .anuncio {
   background-color: #cacac7;
-  border: 10px solid black;
-  border-radius: 0.2rem;
+  border: 0.35rem solid black;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 .anuncio .contenido-anuncio {
   padding: 1rem;
 }
 .anuncio img {
   width: 100%;
+  border-radius: 1rem;
 }
 .anuncio h3, .anuncio p {
   text-align: center;
@@ -586,6 +603,7 @@ template {
 }
 .icono h3 {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -596,10 +614,13 @@ template {
   }
 }
 .icono:hover {
-  background-color: #f07006;
+  background-color: rgba(0, 0, 0, 0.7725490196);
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 4rem;
+}
+.icono:hover h3 {
+  color: #ffae00;
 }
 
 .contacto {
