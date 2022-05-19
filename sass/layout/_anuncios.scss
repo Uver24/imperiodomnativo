@@ -5,8 +5,8 @@
     }
 }
 .anuncio{
-    background-color: lighten($color: #bebdba, $amount: 5);
-    border: .35rem solid darken($color: #000000, $amount: 10);
+    background-color: lighten($azulOscuro, $amount: 5);
+    border: .35rem solid darken($negro, $amount: 10);
     padding: .8rem;
     border-radius: .5rem;
     .contenido-anuncio{
@@ -18,16 +18,16 @@
     }
     h3, p{
         text-align: center;
-        margin: 0%;
+        margin: 0;
     }
     h3{
-        text-shadow: 0 2px rgb(240, 112, 6);
-        text-decoration: underline;
+        color: $dorado;
         font-weight: $bold;
     }
     .precio{
-        color: rgb(240, 112, 6);
+        color: $dorado;
         font-weight: bold;
-        font-size: 2,4rem;
+        font-size: 2.2rem;
     }
 }
+

@@ -1,10 +1,19 @@
-.boton-amarillo {
-    @include boton(rgb(240, 112, 6), $blanco, block);
+.btn-producto {
+    @include boton($transparente, $blanco, block);
 }
-.naranja{
-    @include boton (rgb(240, 112, 6),$blanco,inline-block)
+.btn-important{
+    @include boton ($transparente,$blanco,inline-block);
+}
+.btn-hover {
+    font-size: 2rem;
+    &:hover {
+        color: $dorado;
+        border: 5px solid darken($negro, 10);
+        border-style: double;
+    }
 }
 
-.boton-verde{
-    @include boton (green,$verde,inline-block)
-}
+
+
+
+
