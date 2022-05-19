@@ -1,8 +1,8 @@
 @include tablet{
-    .inferior{
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 1rem;
+    .seccion-inferior{
+       display:grid;
+       grid-template-columns: 2fr 1fr;
+       column-gap: 2rem;
     }
 }
 
@@ -10,7 +10,7 @@
     margin-bottom: 3rem;
     @include tablet{
         display:grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
         column: gap 2rem; 
     }
 
@@ -35,7 +35,7 @@ margin-bottom: 0;
                 display:block;
                 width: 15rem;
                 height: .5rem;
-                background-color: $verde;
+                background-color:$naranja;
                 margin-top: 1rem;
             }
         }
