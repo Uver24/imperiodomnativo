@@ -765,6 +765,16 @@ template {
   font-weight: 700;
 }
 
+.imagen-contacto-form {
+  background-color: #114b55;
+  border: 0.35rem solid black;
+  padding: 0.8rem;
+}
+.imagen-contacto-form img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 @media (min-width: 768px) {
   .seccion-inferior {
     display: grid;
@@ -837,6 +847,43 @@ template {
 }
 .testimonial p {
   color: white;
+}
+
+.formulario p {
+  font-size: 2rem;
+  color: #ffae00;
+  margin: 1.5rem 0 0 0;
+}
+.formulario legend {
+  font-size: 2rem;
+  color: #ffae00;
+}
+.formulario label {
+  font-family: 700;
+  text-transform: uppercase;
+  display: block;
+}
+.formulario input:not([type=submit]), .formulario textarea, .formulario select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  border: 1px solid #3898A8;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.formulario textarea {
+  height: 10rem;
+}
+.formulario .formulario-contacto {
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.formulario input[type=radio] {
+  margin: 0;
+  width: auto;
 }
 
 /* Paginas internas*/

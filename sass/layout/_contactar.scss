@@ -18,3 +18,12 @@
     }
 }
 
+.imagen-contacto-form{
+    background-color: lighten($azulOscuro, $amount: 5);
+    border: .35rem solid darken($negro, $amount: 10);
+    padding: .8rem;
+    img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
