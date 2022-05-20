@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -10,10 +11,10 @@ html {
 }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: #456F6F;
+  background-color: #3898A8;
 }
 
 p {
@@ -26,6 +27,9 @@ p {
   max-width: 120rem;
   margin: 0 auto;
 }
+.contenedor h2 {
+  color: black;
+}
 
 a {
   text-decoration: none;
@@ -37,7 +41,7 @@ img, picture {
 }
 
 h1, h2, h3 {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
   margin: 2.5rem 0;
   font-weight: 300;
   text-align: center;
@@ -60,6 +64,17 @@ h4 {
 }
 
 /**Media Quieries**/
+@keyframes glowing-btn {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 html {
   line-height: 1.15;
   /* 1 */
@@ -398,7 +413,7 @@ template {
 }
 
 .contenido-centrado {
-  max-width: 800px;
+  max-width: 80rem;
 }
 
 .ver {
@@ -407,37 +422,143 @@ template {
   padding-bottom: 2rem;
 }
 
-.boton-amarillo {
-  background-color: rgb(240, 112, 6);
+.precio {
+  color: #ffae00;
+  font-weight: 3rem;
+  font-size: 3rem;
+}
+
+.centrado img {
+  width: 50rem;
+  border-radius: 1rem;
+  display: flex;
+  margin: 0px auto;
+}
+.centrado h1, .centrado p {
+  text-align: center;
+  margin: 0;
+}
+.centrado h1 {
+  color: #ffae00;
+  font-weight: 700;
+}
+.centrado .precio {
+  color: #ffae00;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.contenedor1 {
+  background-color: #114b55;
+  border: 0.35rem solid black;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 80rem;
+  display: block;
+  margin: 20px auto;
+}
+
+.btn-producto {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
   color: white;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
   font-weight: 700;
   text-decoration: none;
-  padding: 1rem 3rem;
   text-align: center;
+  border-radius: 1rem;
+  touch-action: manipulation;
   margin-top: 2.5rem;
   display: block;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.btn-producto:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-btn 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.btn-producto:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7725490196);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
-.naranja {
-  background-color: rgb(240, 112, 6);
+.btn-important {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
   color: white;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
   font-weight: 700;
   text-decoration: none;
-  padding: 1rem 3rem;
   text-align: center;
+  border-radius: 1rem;
+  touch-action: manipulation;
   margin-top: 2.5rem;
   display: inline-block;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.btn-important:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-btn 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.btn-important:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7725490196);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
-.boton-verde {
-  background-color: green;
-  color: #456F6F;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  text-align: center;
-  margin-top: 2.5rem;
-  display: inline-block;
+.btn-hover {
+  font-size: 2rem;
+}
+.btn-hover:hover {
+  color: #ffae00;
+  border: 5px solid black;
+  border-style: double;
 }
 
 /* Importacion de la User Interface UI*/
@@ -462,7 +583,8 @@ template {
 }
 
 .header {
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 0.2rem 0rem;
+  height: auto;
   background-color: #3c3c3c;
 }
 .header.inicio {
@@ -487,16 +609,17 @@ template {
   justify-content: space-between;
 }
 .contenido-header h1 {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
+  align-self: flex-end;
 }
 
 .barra {
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
@@ -505,14 +628,14 @@ template {
     display: flex;
   }
   .barra img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: auto;
   }
 }
 .barra img {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   margin: auto;
 }
 
@@ -527,21 +650,34 @@ template {
 }
 .navegacion a {
   color: white;
-  background-color: rgba(0, 0, 0, 0.1803921569);
-  border-radius: 2rem;
-  padding: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  border-radius: 1.2rem;
+  padding: 15px;
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   text-align: center;
 }
 .navegacion a:hover {
-  background-color: #f07006;
-  border-radius: 2rem 5rem 2rem 5rem;
+  background-color: #ffae00;
+  font-weight: 900;
+  color: #1B1A17;
+  text-shadow: 0 0.1rem white;
+  border-radius: 1.8rem 2rem 1.8rem 2rem;
 }
 
 .header h1 {
   color: white;
-  text-shadow: 0px 2px #1B1A17;
+  text-shadow: 0 0.1rem #f07006;
+  background-color: rgba(0, 0, 0, 0.7725490196);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+.header h1:hover {
+  background-color: #ffae00;
+  color: #1B1A17;
+  text-shadow: 0 0.2rem white;
 }
 
 @media (min-width: 768px) {
@@ -551,34 +687,31 @@ template {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.contenedor-anuncio {
-  padding: 0 2rem 2rem 2rem;
-}
-
 .anuncio {
-  background-color: #cacac7;
-  border: 10px solid black;
-  border-radius: 0.2rem;
+  background-color: #114b55;
+  border: 0.35rem solid black;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 .anuncio .contenido-anuncio {
   padding: 1rem;
 }
 .anuncio img {
   width: 100%;
+  border-radius: 1rem;
 }
 .anuncio h3, .anuncio p {
   text-align: center;
-  margin: 0%;
+  margin: 0;
 }
 .anuncio h3 {
-  text-shadow: 0 2px rgb(240, 112, 6);
-  text-decoration: underline;
+  color: #ffae00;
   font-weight: 700;
 }
 .anuncio .precio {
-  color: rgb(240, 112, 6);
+  color: #ffae00;
   font-weight: bold;
-  font-size: 2, 4rem;
+  font-size: 2.2rem;
 }
 
 .icono {
@@ -591,6 +724,7 @@ template {
 }
 .icono h3 {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -601,10 +735,13 @@ template {
   }
 }
 .icono:hover {
-  background-color: #f07006;
+  background-color: rgba(0, 0, 0, 0.7725490196);
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 4rem;
+}
+.icono:hover h3 {
+  color: #ffae00;
 }
 
 .contacto {
@@ -626,18 +763,6 @@ h2 {
 p {
   font-size: 2rem;
   color: white;
-}
-
-.naranja {
-  border: 5px solid #232323;
-  font-size: 2.3rem;
-}
-
-.naranja:hover {
-  color: #f07006;
-  background-color: #456F6F;
-  border: 5px solid #232323;
-  border-style: double;
 }
 
 @media (min-width: 768px) {

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 //Fuentes
-$fuente_principal: 'Alegreya', sans-serif;
-$fuente_secundaria: 'Dancing Script', cursive;
+$fuente_principal: 'Hind Siliguri', sans-serif;
+$fuente_secundaria: 'Alegreya', cursive;
 
 //Tamaño media queris
 $telefono: 480px;
@@ -13,13 +14,14 @@ $desktop: 1024px;
 $negro: black;
 $blanco: white;
 $claro: #9e927d;
-$naranja:#fd4400;
-$amarillo:#ffae00;
+$dorado:#ffae00;
+$azul: #3898A8;
+$azulOscuro: #0d3840;
 $oscuro:#1B1A17;
 $verde: #456F6F;
 $grisOscuro:#3c3c3c;
 $naranja: #f07006;
-$tranparente: #0000002e;
+$transparente: #000000c5;
 
 
 $separacion: 5rem;

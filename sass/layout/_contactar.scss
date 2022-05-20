@@ -18,14 +18,4 @@ p{
     color:$blanco;
    
 }
-.naranja{
-    border: 5px solid darken($grisOscuro,10);
-    font-size: 2.3rem;
-}
 
-.naranja:hover{
- color:$naranja;
- background-color: $verde;
- border: 5px solid darken($grisOscuro,10);
- border-style: double;
-}
