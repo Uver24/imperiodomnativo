@@ -854,7 +854,7 @@ template {
 }
 .testimonial blockquote::before {
   content: "";
-  background-image: url("/img/blog/quotes.svg");
+  background-image: url("./../../img/blog/quotes.svg");
   background-size: 20rem 20rem;
   background-repeat: no-repeat;
   width: 20rem;
