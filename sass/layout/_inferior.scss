@@ -8,16 +8,19 @@
 
 .entrada-blog{
     margin-bottom: 3rem;
+    .imagen img{
+        border-radius: 2rem;
+    }
     @include tablet{
         display:grid;
-        grid-template-columns: 1.5fr 2fr;
-        column: gap 2rem; 
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem; 
     }
+    &::last-of-type{
+    margin-bottom: 0;
+    }
+}
 
-&::last-of-type{
-margin-bottom: 0;
-}
-}
 .texto-entrada{
     a{
         color:$negro;
@@ -26,21 +29,21 @@ margin-bottom: 0;
         @include tablet{
             margin-top: 0;
         }
-
-        h4{
-            margin: 0;
-            line-height: 1.4;
-            &::after{
-                content: '';
-                display:block;
-                width: 15rem;
-                height: .5rem;
-                background-color:$naranja;
-                margin-top: 1rem;
-            }
-        }
-        span{
-            color: $naranja;
+    }
+    h4{
+        margin: 0;
+        line-height: 1.4;
+        &::after{
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $transparente;
+            margin-top: 1rem;
         }
     }
+    span{
+        color: $blanco;
+    }
+    
 }
