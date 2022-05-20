@@ -424,17 +424,24 @@ template {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .caja {
+    width: 80rem;
+  }
+  .caja .img {
+    width: 50rem;
+  }
+}
 .caja {
-  width: 80rem;
   display: block;
   margin: 2rem auto;
+  padding: 8rem;
 }
 .caja h1, .caja h2 {
   color: #ffae00;
   font-weight: 700;
 }
 .caja .img {
-  width: 50rem;
   border-radius: 1rem;
   border: 0.8rem double #ffae00;
   display: flex;
