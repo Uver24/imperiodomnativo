@@ -1,22 +1,24 @@
 .testimonial{
-    background-color: $naranja;
+    background-color: $transparente;
     font-size: 2.4rem;
     padding: 2rem;
     color:$blanco;
+    border-radius: 2rem;
     blockquote{
         padding-left: 5rem;
         position: relative;
 
         &::before{
             content: '';
-            background-image: url('/img/productos/fondo-slide3.jpeg');
+            background-image: url('/img/blog/quotes.svg');
+            background-size: 20rem 20rem;
             background-repeat: no-repeat;
             width: 20rem;
-            height: 24rem;
-            display: block;
-            left: -13rem;
-            top: -8rem;
-        
+            height: 20rem;
+            display: block; 
         }
+    }
+    p{
+        color: $blanco;
     }
 }

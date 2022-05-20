@@ -19,20 +19,20 @@
     a:hover {
         background-color: $dorado;
         font-weight: $black;
-        color: $oscuro;
+        color: $azulOscuro;
         text-shadow: 0 .1rem $blanco;
         border-radius: 1.8rem 2rem 1.8rem 2rem;
     }
 }
 .header h1{
     color: $blanco;
-    text-shadow: 0 0.1rem $naranja;
+    text-shadow: 0 0.1rem $dorado;
     background-color: $transparente;
     border-radius: 3rem;
     padding: 2rem;
     &:hover {
         background-color: $dorado;
-        color: $oscuro;
+        color: $azulOscuro;
         text-shadow: 0 .2rem $blanco;
     }
 }
