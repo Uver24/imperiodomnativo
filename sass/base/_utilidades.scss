@@ -16,14 +16,21 @@
     width: 80rem;
     display: block;
     margin: 2rem auto;
-    h1 {
+    h1,h2 {
         color: $dorado;
         font-weight: $bold;
     }
     .img {
         width: 50rem;
         border-radius: 1rem;
+        border: .8rem double $dorado;
         display: flex;
         margin: 0 auto;
+    }
+}
+
+.informacion-meta{
+    span {
+        color: $dorado;
     }
 }
