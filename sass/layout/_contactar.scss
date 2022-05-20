@@ -1,21 +1,20 @@
-.contacto{
-    background-image: url("/icon/contacto.jpg");
+.imagen-contacto{
+    background-image: url("/icon/contacto.png");
     background-position: center center;
     background-size: cover;
     padding: $separacion *3 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-h2{
-    font-size: 4rem;
-    font-weight: $black;
-    color:$blanco;
-
-}
-p{
-    font-size: 2rem;
-    color:$blanco;
-   
+    h2{
+        font-size: 4rem;
+        font-weight: $black;
+        color:$dorado;
+    }
+    p{
+        font-size: 2rem;
+        color:$blanco;
+        font-weight: $bold;
+    }
 }
 
