@@ -424,40 +424,20 @@ template {
   padding-bottom: 2rem;
 }
 
-.precio {
-  color: #ffae00;
-  font-weight: 3rem;
-  font-size: 3rem;
+.caja {
+  width: 80rem;
+  display: block;
+  margin: 2rem auto;
 }
-
-.centrado img {
-  width: 50rem;
-  border-radius: 1rem;
-  display: flex;
-  margin: 0px auto;
-}
-.centrado h1, .centrado p {
-  text-align: center;
-  margin: 0;
-}
-.centrado h1 {
+.caja h1 {
   color: #ffae00;
   font-weight: 700;
 }
-.centrado .precio {
-  color: #ffae00;
-  font-weight: bold;
-  font-size: 2.2rem;
-}
-
-.contenedor1 {
-  background-color: #114b55;
-  border: 0.35rem solid black;
-  padding: 0.8rem;
-  border-radius: 0.5rem;
-  width: 80rem;
-  display: block;
-  margin: 20px auto;
+.caja .img {
+  width: 50rem;
+  border-radius: 1rem;
+  display: flex;
+  margin: 0 auto;
 }
 
 .btn-producto {
@@ -705,6 +685,9 @@ template {
   text-align: center;
   margin: 0;
 }
+.anuncio p {
+  color: white;
+}
 .anuncio h3 {
   color: #ffae00;
   font-weight: 700;
@@ -712,7 +695,7 @@ template {
 .anuncio .precio {
   color: #ffae00;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 
 .icono {
@@ -743,6 +726,9 @@ template {
 }
 .icono:hover h3 {
   color: #ffae00;
+}
+.icono:hover p {
+  color: white;
 }
 
 .imagen-contacto {
@@ -857,7 +843,7 @@ template {
 .texto-nosotros blockquote::after {
   content: "";
   display: block;
-  width: 25rem;
+  width: 20rem;
   height: 0.5rem;
   background-color: #ffae00;
   margin-top: 1rem;

@@ -20,6 +20,9 @@
         text-align: center;
         margin: 0;
     }
+    p {
+        color: $blanco;
+    }
     h3{
         color: $dorado;
         font-weight: $bold;
@@ -27,7 +30,7 @@
     .precio{
         color: $dorado;
         font-weight: bold;
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
 }
 

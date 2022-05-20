@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,34 @@
     <link rel="stylesheet" href="/sass/app.css" type="text/css">
     <title>Imperio Dom</title>
 </head>
+
 <body>
     <header class="header inicio">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/index.html"><img src="/icon/logo.png" alt="Logo de Empresa de Imperio Dom"> <h1>Imperio Dom.</h1></a> 
+                <a href="/index.html">
+                    <img src="/icon/logo.png" alt="Logo de Empresa de Imperio DOM">
+                    <h1>Imperio DOM</h1>
+                </a>
                 <nav class="navegacion">
-                    <a href="/html/nosotros.html">Nosotros</a>
-                    <a href="/html/anuncios.html">Anuncios</a>
-                    <a href="/html/blog.html">Blog</a>
-                    <a href="/html/contacto.html">Contáctenos</a>
-                </nav>  
+                    <a href="/html/nosotros.html" target="/html/nosotros.html">Nosotros</a>
+                    <a href="/html/anuncios.html" target="/html/nosotros.html">Anuncios</a>
+                    <a href="/html/blog.html" target="/html/blog.html">Blog</a>
+                    <a href="/html/contacto.html" target="/html/contacto.html">Contáctenos</a>
+                </nav>
             </div>
         </div>
     </header>
-    <main class="contenedor1 centrado">
-        <h1> THE ONE</h1>
-        <img src="/img/productos/the-one.jpeg">
-                 <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto necessitatibus repellendus ex fugiat? Illum doloribus aliquid asperiores provident assumenda alias nobis blanditiis laudantium, neque amet! Nemo facere veniam provident.</p>
-                 <p class="precio">
-                            Precio: $102.000
-                 </p>
-
+    <main class="anuncio caja">
+        <h1>THE ONE</h1>
+        <img class="img" src="/img/productos/the-one.jpeg" loading="lazy" alt="Producto The One">
+        <div class="contenido-anuncio">
+            <p class="precio">Precio: $95.000</p>
+            <p>
+            The One Proscience es el multivitaminico perfecto para complementar tu dieta. Más de 20 vitaminas y minerales para
+            entregarte un excelente aporte de micronutrientes.
+            </p>
+        </div>
     </main>
    
 
@@ -46,4 +52,5 @@
         <p class="copyright">Todos los Derechos Reservados 2022 &copy;</p>
     </footer>
 </body>
+
 </html>

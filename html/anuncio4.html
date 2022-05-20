@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,37 @@
     <link rel="stylesheet" href="/sass/app.css" type="text/css">
     <title>Imperio Dom</title>
 </head>
+
 <body>
     <header class="header inicio">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/index.html"><img src="/icon/logo.png" alt="Logo de Empresa de Imperio Dom"> <h1>Imperio Dom.</h1></a> 
+                <a href="/index.html">
+                    <img src="/icon/logo.png" alt="Logo de Empresa de Imperio DOM">
+                    <h1>Imperio DOM</h1>
+                </a>
                 <nav class="navegacion">
-                    <a href="/html/nosotros.html">Nosotros</a>
-                    <a href="/html/anuncios.html">Anuncios</a>
-                    <a href="/html/blog.html">Blog</a>
-                    <a href="/html/contacto.html">Contáctenos</a>
-                </nav>  
+                    <a href="/html/nosotros.html" target="/html/nosotros.html">Nosotros</a>
+                    <a href="/html/anuncios.html" target="/html/nosotros.html">Anuncios</a>
+                    <a href="/html/blog.html" target="/html/blog.html">Blog</a>
+                    <a href="/html/contacto.html" target="/html/contacto.html">Contáctenos</a>
+                </nav>
             </div>
         </div>
     </header>
-    <main class="contenedor1 centrado">
-        <h1> PESAS</h1>
-        <img src="/img/productos/colon.jpeg">
-                 <p>La creatina, ácido α-metil guanido-acético, es un ácido orgánico nitrogenado que se encuentra en los músculos y células nerviosas de algunos organismos vivos.</p>
-                 <p class="precio">
-                            Precio: $95.000
-                 </p>
 
+    <main class="anuncio caja">
+        <h1>SMART GAINER</h1>
+        <img class="img" src="/img/productos/smart-caja.jpeg" loading="lazy" alt="Producto The One">
+        <div class="contenido-anuncio">
+            <p class="precio">Precio: $220.000</p>
+            <p>
+                Nos dimos a la tarea de formular un producto increíble, no fue una tarea fácil, pero logramos construir una mezcla
+                increíble.
+            </p>
+        </div>
     </main>
-   
+
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
@@ -40,9 +48,10 @@
                 <a href="/html/anuncios.html">Anuncios</a>
                 <a href="/html/blog.html">Blog</a>
                 <a href="/html/contacto.html">Contáctenos</a>
-            </nav> 
+            </nav>
         </div>
         <p class="copyright">Todos los Derechos Reservados 2022 &copy;</p>
     </footer>
 </body>
+
 </html>

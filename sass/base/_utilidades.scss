@@ -12,43 +12,18 @@
     justify-content: flex-end;
     padding-bottom: 2rem;
 }
-.precio{
-    color: $dorado;
-    font-weight: 3rem;
-    font-size: 3rem;
-}
-.centrado{
-    
-    
-   img{ 
-    width: 50rem;
-        border-radius: 1rem;
-        display: flex;
-        margin: 0px auto;
-        
-    }
-    h1, p{
-        text-align: center;
-        margin: 0;
-    }
-    h1{
+.caja {
+    width: 80rem;
+    display: block;
+    margin: 2rem auto;
+    h1 {
         color: $dorado;
         font-weight: $bold;
     }
-    .precio{
-        color: $dorado;
-        font-weight: bold;
-        font-size: 2.2rem;
+    .img {
+        width: 50rem;
+        border-radius: 1rem;
+        display: flex;
+        margin: 0 auto;
     }
-
-
-}
-.contenedor1 {
-    background-color: lighten($azulOscuro, $amount: 5);
-    border: .35rem solid darken($negro, $amount: 10);
-    padding: .8rem;
-    border-radius: .5rem;
-    width: 80rem;
-    display: block;
-    margin: 20px auto;
 }
