@@ -1,5 +1,6 @@
 .icono{
     text-align: center;
+    padding: 2rem;
     img{
         height: 25rem;
         width: 25rem;
@@ -20,8 +21,6 @@
 
 .icono:hover{
     background-color: $transparente;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
     border-radius: 4rem;
     h3 {
         color: $dorado;

@@ -6,15 +6,15 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
-  background-color: #3898A8;
+  background-color: #81c9fa;
 }
 
 p {
@@ -438,18 +438,18 @@ template {
   padding: 8rem;
 }
 .caja h1, .caja h2 {
-  color: #ffae00;
+  color: #eef000;
   font-weight: 700;
 }
 .caja .img {
   border-radius: 1rem;
-  border: 0.8rem double #ffae00;
+  border: 0.8rem double #eef000;
   display: flex;
   margin: 0 auto;
 }
 
 .informacion-meta span {
-  color: #ffae00;
+  color: #eef000;
 }
 
 .btn-producto {
@@ -550,7 +550,7 @@ template {
   font-size: 2rem;
 }
 .btn-hover:hover {
-  color: #ffae00;
+  color: #eef000;
   border: 5px solid black;
   border-style: double;
 }
@@ -671,30 +671,28 @@ template {
   font-family: "Hind Siliguri", sans-serif;
   font-weight: 300;
   background-color: rgba(0, 0, 0, 0.7725490196);
-  border-radius: 1.2rem;
-  padding: 15px;
+  border-radius: 7px;
+  padding: 0.5rem 2.5rem;
   display: block;
   font-size: 2.3rem;
   text-align: center;
+  font-weight: 900;
 }
 .navegacion a:hover {
-  background-color: #ffae00;
-  font-weight: 900;
-  color: #0d3840;
-  text-shadow: 0 0.1rem white;
-  border-radius: 1.8rem 2rem 1.8rem 2rem;
+  background-color: hsla(0deg, 100%, 100%, 0.7);
+  color: black;
 }
 
 .header h1 {
   color: white;
-  text-shadow: 0 0.1rem #ffae00;
+  text-shadow: 0 0.1rem #eef000;
   background-color: rgba(0, 0, 0, 0.7725490196);
-  border-radius: 3rem;
-  padding: 2rem;
+  border-radius: 7px;
+  padding: 0.5rem 2.5rem;
 }
 .header h1:hover {
-  background-color: #ffae00;
-  color: #0d3840;
+  background-color: hsla(0deg, 100%, 100%, 0.7);
+  color: black;
   text-shadow: 0 0.2rem white;
 }
 
@@ -706,10 +704,13 @@ template {
   }
 }
 .anuncio {
-  background-color: #114b55;
+  display: flex;
+  flex-direction: column;
+  background-color: #00429f;
   border: 0.35rem solid black;
   padding: 0.8rem;
   border-radius: 0.5rem;
+  justify-content: space-between;
 }
 .anuncio .contenido-anuncio {
   padding: 1rem;
@@ -726,17 +727,18 @@ template {
   color: white;
 }
 .anuncio h3 {
-  color: #ffae00;
+  color: #eef000;
   font-weight: 700;
 }
 .anuncio .precio {
-  color: #ffae00;
+  color: #eef000;
   font-weight: bold;
   font-size: 3rem;
 }
 
 .icono {
   text-align: center;
+  padding: 2rem;
 }
 .icono img {
   height: 25rem;
@@ -757,12 +759,10 @@ template {
 }
 .icono:hover {
   background-color: rgba(0, 0, 0, 0.7725490196);
-  padding: 1rem;
-  margin-bottom: 1.5rem;
   border-radius: 4rem;
 }
 .icono:hover h3 {
-  color: #ffae00;
+  color: #eef000;
 }
 .icono:hover p {
   color: white;
@@ -780,7 +780,7 @@ template {
 .imagen-contacto h2 {
   font-size: 4rem;
   font-weight: 900;
-  color: #ffae00;
+  color: #eef000;
 }
 .imagen-contacto p {
   font-size: 2rem;
@@ -792,7 +792,7 @@ template {
   padding: 0.8rem;
 }
 .imagen-contacto-form img {
-  border: 0.35rem double #cc8b00;
+  border: 0.35rem double #bbbd00;
   width: 100%;
   height: 45rem;
   border-radius: 5rem;
@@ -893,8 +893,8 @@ template {
   padding: 1rem;
   display: block;
   width: 100%;
-  background-color: #3898A8;
-  border: 1px solid #0d3840;
+  background-color: #81c9fa;
+  border: 1px solid #003785;
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
@@ -932,7 +932,7 @@ template {
   display: block;
   width: 20rem;
   height: 0.5rem;
-  background-color: #ffae00;
+  background-color: #eef000;
   margin-top: 1rem;
 }
 

@@ -5,10 +5,13 @@
     }
 }
 .anuncio{
+    display: flex;
+    flex-direction: column;
     background-color: lighten($azulOscuro, $amount: 5);
     border: .35rem solid darken($negro, $amount: 10);
     padding: .8rem;
     border-radius: .5rem;
+    justify-content: space-between;
     .contenido-anuncio{
         padding: 1rem;
     }
